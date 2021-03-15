@@ -1,6 +1,7 @@
+// SPDX-License-Identifier: MIT
 pragma solidity 0.6.12;
 
-import "@pancakeswap/pancake-swap-lib/contracts/token/BEP20/BEP20.sol";
+import "./BEP20.sol";
 
 contract MockBEP20 is BEP20 {
     constructor(
@@ -11,4 +12,13 @@ contract MockBEP20 is BEP20 {
         _mint(msg.sender, supply);
 
     }
+
+    function mint(address _to, uint256 _amount) public onlyOwner {
+        _mint(_to, _amount);
+    }
+
+    function burn(address _from, uint256 _amount) public onlyOwner {
+        _burn(_from, _amount);
+    }
+
 }

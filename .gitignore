@@ -1,10 +1,12 @@
 /node_modules/
+/.idea/
+/.secret
+/secrets.json
+/scripts/
+/migrations/
 /build/
-
-node_modules
-
-#Buidler files
-cache
-artifacts
-coverage
-coverage.json
+/test/
+/truffle-config.js
+/external/
+/package.json
+/yarn.lock
