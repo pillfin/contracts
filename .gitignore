@@ -7,6 +7,5 @@
 /build/
 /test/
 /truffle-config.js
-/external/
 /package.json
 /yarn.lock
